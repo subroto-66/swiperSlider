@@ -1,0 +1,18 @@
+.main {
+  position: relative;
+  color: red;
+  background: green;
+}
+
+.main:hover {
+  color: blue;
+  background: red;
+}
+
+.main::before {
+  position: absolute;
+  width: 20px;
+  height: 10px;
+  background: yellow;
+  right: 0;
+}

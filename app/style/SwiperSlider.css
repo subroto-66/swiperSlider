@@ -1,0 +1,28 @@
+.swiper {
+  width: 100%;
+  padding-top: 3.125rem;
+}
+
+.swiper .swiper-slide {
+  width: full;
+  /* width: 24.125rem; */
+  height: 24.125rem;
+}
+
+.swiper .swiper-pagination {
+  position: relative;
+  padding: 10px !important;
+  z-index: 50 !important;
+  bottom: -0.11rem !important;
+}
+
+.swiper .swiper-pagination-bullet-active {
+  width: 30px !important;
+  height: 7px;
+  border-radius: 5px !important;
+}
+
+.swiper .swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background: red;
+}
