@@ -30,6 +30,10 @@ const SwiperComponent = ({ sliders }: slider) => {
           disableOnInteraction: false,
         }}
         slidesPerView="auto"
+        initialSlide={0}
+        keyboard={{
+          enabled: true,
+        }}
         pagination={{
           el: ".swiper-pagination",
           clickable: true,
@@ -59,28 +63,31 @@ const SwiperComponent = ({ sliders }: slider) => {
             coverflowEffect: { modifier: 2 },
           },
           768: {
-            slidesPerView: 3,
-            coverflowEffect: { modifier: 2 },
+            slidesPerView: 2,
+            coverflowEffect: { modifier: 3 },
           },
           1024: {
-            slidesPerView: 3,
-            coverflowEffect: { modifier: 2 },
+            slidesPerView: 2,
+            coverflowEffect: { modifier: 3 },
           },
           1280: {
             slidesPerView: 3,
-            coverflowEffect: { modifier: 3 },
+            coverflowEffect: { modifier: 4 },
           },
           1560: {
             slidesPerView: 3,
-            coverflowEffect: { modifier: 5 },
+            coverflowEffect: { modifier: 4 },
           },
         }}
         modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
         className="mySwiper"
       >
         {sliders?.map((slider: any, index: number) => (
-          <SwiperSlide key={index} className="newClass max-w-7xl">
-            <Slide slider={slider} className="h-80 w-full  select-none" />
+          <SwiperSlide key={index} className="w-7xl mx-auto">
+            <Slide
+              slider={slider}
+              className="h-80 w-[32rem] mx-auto select-none"
+            />
           </SwiperSlide>
         ))}
         {/* Bullet Pagination */}

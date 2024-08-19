@@ -26,3 +26,8 @@
 .swiper-pagination-bullet-active {
   background: red;
 }
+
+.mySwiper {
+  width: 100%;
+  height: auto;
+}

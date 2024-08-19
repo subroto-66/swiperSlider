@@ -14,9 +14,9 @@ export default function Slide({ slider, className }: slideImage) {
         height={600}
         alt="image"
         loading="lazy"
-        className={`w-full object-cover h-full  rounded-2xl ${className}`}
+        className={`object-cover h-full  rounded-2xl ${className}`}
       />
-      <div className="swiper-lazy-preloader"></div>
+      {/* <div className="swiper-lazy-preloader"></div> */}
     </div>
   );
 }
